@@ -1,0 +1,457 @@
+.main {
+  margin: 0;
+  padding: 0;
+  padding-top: 60px;
+  padding-bottom: 59px;
+  background-color: #f7f7f7;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.page-title {
+  margin-bottom: 30px;
+  font-family: "Playfair Display";
+  font-size: 30px;
+  line-height: 46px;
+  font-weight: 400;
+}
+
+.main-part-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.careers {
+  padding-top: 32px;
+  width: 286px;
+  background-color: #fff;
+}
+
+.careers__title-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ececec;
+}
+
+.careers__title-logo {
+  margin-left: 4px;
+  width: 18px;
+  height: 15px;
+  background-image: url("../img/careers-logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.careers__title {
+  margin: 0;
+  padding: 0;
+  margin-left: 13px;
+  margin-bottom: 20px;
+  font-family: "Helvetica";
+  font-style: normal;
+  color: #259609;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.careers__title--mobile {
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+.accordion-flush .accordion-item .accordion-button,
+.accordion-flush .accordion-item .accordion-button.collapsed {
+  width: 286px;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.accordion-item {
+  border: none;
+}
+
+.accordion-button:focus {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #259609;
+  background-color: transparent;
+}
+
+.careers__button-wrapper {
+  margin: 0 15px;
+  padding-top: 20px;
+  border-top: 1px solid #ececec;
+}
+
+.psyhology__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.psyhology__link {
+  display: block;
+  padding: 12px 13px;
+  width: 100%;
+  text-decoration: none;
+  color: #3e3e3e;
+}
+.psyhology__link:hover {
+  background-color: #f2f2f2;
+}
+.psyhology__link:active {
+  color: #259609;
+  background-color: #deefda;
+}
+
+.careers__button {
+  padding-top: 15px;
+  padding-bottom: 12px;
+  margin-bottom: 30px;
+  width: 100%;
+  color: #259609;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  background-color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid #259609;
+  border-radius: 2px;
+}
+
+.cards__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 15px;
+  margin-left: 14px;
+  margin-bottom: 46px;
+}
+
+.card__hover-content {
+  display: none;
+}
+
+.card {
+  position: relative;
+  padding: 0 30px;
+  width: 282px;
+  background-color: #fff;
+  border-top: 6px solid #259609;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 0;
+}
+.card:hover {
+  cursor: pointer;
+  background-color: #259609;
+}
+.card:hover .card__content {
+  display: none;
+}
+.card:hover .card__hover-content {
+  display: block;
+  padding-top: 24px;
+}
+
+.card__hover-exit {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  background-image: url("../img/exit.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+}
+
+.card__hover-title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  width: 175px;
+  color: #ffffff;
+  font-family: "Helvetica";
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.card__hover-duration-wrapper {
+  margin-bottom: 20px;
+}
+
+.card__hover-subtitle {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-family: "Helvetica";
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.card__hover-text {
+  display: inline-block;
+  color: #ffffff;
+  font-family: "Helvetica";
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.card__hover-dates-wrapper {
+  margin-bottom: 20px;
+}
+
+.card__hover-price {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-family: "Helvetica";
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.card__hover-button {
+  display: block;
+  margin-bottom: 30px;
+  padding-top: 15px;
+  padding-bottom: 12px;
+  width: 100%;
+  color: #259609;
+  font-family: "Helvetica";
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  background-color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 3px;
+  border: none;
+}
+.card__hover-button:hover {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.card__hover-button:hover .card__hover-exit {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.card__logo {
+  display: block;
+  margin-top: 24px;
+  margin-left: auto;
+  margin-bottom: 30px;
+}
+
+.card__category {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  color: #259609;
+  font-family: "Helvetica";
+  font-size: 13px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.card__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 72px;
+  font-family: "Helvetica";
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #3e3e3e;
+}
+
+.card__type-wrapper,
+.card__period-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card__type-wrapper {
+  margin-bottom: 8px;
+}
+
+.card__period-wrapper {
+  margin-bottom: 30px;
+}
+
+.card__type-icon {
+  width: 18px;
+  height: 15px;
+  background-image: url("../img/postgraduate.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.card__type {
+  margin: 0;
+  padding: 0;
+  margin-left: 14px;
+  font-family: "Helvetica";
+  font-size: 14px;
+  line-height: 16px;
+  color: #3e3e3e;
+}
+
+.card__period-icon {
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/period.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.card__period {
+  margin: 0;
+  padding: 0;
+  margin-left: 17px;
+  font-family: "Helvetica";
+  font-size: 14px;
+  line-height: 16px;
+  color: #3e3e3e;
+}
+
+.card__button {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+  padding-top: 15px;
+  padding-bottom: 12px;
+  width: 100%;
+  color: #ffffff;
+  font-family: "Helvetica";
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  background-color: #259609;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 3px;
+  border: none;
+}
+
+.cards__more-button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.more-button__text {
+  color: #3e3e3e;
+  font-family: "Helvetica";
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.more-button__button {
+  margin: 0;
+  padding: 0;
+  margin-left: 12px;
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/reset.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+}
+
+@media screen and (max-width: 650px) {
+  .main {
+    padding-top: 15px;
+    background-color: #ffffff;
+  }
+  .page-title {
+    margin-left: 22px;
+    margin-bottom: 16px;
+  }
+  .main-part-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .careers {
+    padding-top: 0;
+    width: 100%;
+  }
+  .careers__title-wrapper {
+    margin-bottom: 20px;
+    padding-top: 16px;
+    padding-bottom: 14px;
+    padding-left: 27px;
+    padding-right: 27px;
+    background-color: #f1f1f1;
+  }
+  .careers__title {
+    display: none;
+  }
+  .careers__title--mobile {
+    display: block;
+    margin-left: 13px;
+    color: #3e3e3e;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+  }
+  .careers__button-wrapper {
+    display: none;
+  }
+  .accordion {
+    display: none;
+  }
+  .cards {
+    width: 100%;
+  }
+  .card {
+    width: 95%;
+  }
+}

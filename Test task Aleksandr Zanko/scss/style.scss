@@ -1,0 +1,484 @@
+$main-green-color: #259609;
+$main-black-color: #3e3e3e;
+$main-white-color: #ffffff;
+
+@mixin resetList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin resetMarginPadding {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin smallFontSize {
+  font-family: "Helvetica";
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.main {
+  margin: 0;
+  padding: 0;
+  padding-top: 60px;
+  padding-bottom: 59px;
+
+  background-color: #f7f7f7;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.page-title {
+  margin-bottom: 30px;
+
+  font-family: "Playfair Display";
+  font-size: 30px;
+  line-height: 46px;
+  font-weight: 400;
+}
+
+.main-part-wrapper {
+  display: flex;
+}
+
+.careers {
+  padding-top: 32px;
+  width: 286px;
+  background-color: #fff;
+}
+
+.careers__title-wrapper {
+  display: flex;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ececec;
+}
+
+.careers__title-logo {
+  margin-left: 4px;
+
+  width: 18px;
+  height: 15px;
+
+  background-image: url("../img/careers-logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.careers__title {
+  @include resetMarginPadding;
+
+  margin-left: 13px;
+  margin-bottom: 20px;
+
+  font-family: "Helvetica";
+  font-style: normal;
+  color: $main-green-color;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+
+  text-transform: uppercase;
+}
+
+.careers__title--mobile {
+  @include resetMarginPadding;
+
+  display: none;
+}
+
+.accordion-flush .accordion-item .accordion-button,
+.accordion-flush .accordion-item .accordion-button.collapsed {
+  width: 286px;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.accordion-item {
+  border: none;
+}
+
+.accordion-button:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  color: $main-green-color;
+  background-color: transparent;
+}
+
+.careers__button-wrapper {
+  margin: 0 15px;
+  padding-top: 20px;
+
+  border-top: 1px solid #ececec;
+}
+
+.psyhology__list {
+  @include resetList;
+
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.psyhology__link {
+  display: block;
+  padding: 12px 13px;
+  width: 100%;
+
+  text-decoration: none;
+  color: $main-black-color;
+  &:hover {
+    background-color: #f2f2f2;
+  }
+  &:active {
+    color: $main-green-color;
+    background-color: #deefda;
+  }
+}
+
+.careers__button {
+  padding-top: 15px;
+  padding-bottom: 12px;
+  margin-bottom: 30px;
+  width: 100%;
+
+  color: $main-green-color;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  background-color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid $main-green-color;
+  border-radius: 2px;
+}
+
+.cards__list {
+  @include resetList;
+
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  gap: 15px;
+
+  margin-left: 14px;
+  margin-bottom: 46px;
+}
+
+// hover card styles start
+.card__hover-content {
+  display: none;
+}
+
+.card {
+  position: relative;
+  padding: 0 30px;
+  width: 282px;
+  background-color: #fff;
+  border-top: 6px solid $main-green-color;
+  box-sizing: border-box;
+  border-radius: 0;
+  &:hover {
+    cursor: pointer;
+    background-color: $main-green-color;
+  }
+  &:hover .card__content {
+    display: none;
+  }
+  &:hover .card__hover-content {
+    display: block;
+    padding-top: 24px;
+  }
+}
+
+.card__hover-exit {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  width: 30px;
+  height: 30px;
+
+  background-color: transparent;
+  background-image: url("../img/exit.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+}
+
+.card__hover-title {
+  @include resetMarginPadding;
+
+  margin-bottom: 20px;
+  width: 175px;
+  color: $main-white-color;
+  font-family: "Helvetica";
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.card__hover-duration-wrapper {
+  margin-bottom: 20px;
+}
+
+.card__hover-subtitle {
+  @include resetMarginPadding;
+
+  color: $main-white-color;
+  font-family: "Helvetica";
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.card__hover-text {
+  display: inline-block;
+  color: $main-white-color;
+  font-family: "Helvetica";
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.card__hover-dates-wrapper {
+  margin-bottom: 20px;
+}
+
+.card__hover-price {
+  display: inline-block;
+  margin-bottom: 10px;
+
+  color: $main-white-color;
+  font-family: "Helvetica";
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.card__hover-button {
+  display: block;
+
+  margin-bottom: 30px;
+  padding-top: 15px;
+  padding-bottom: 12px;
+
+  width: 100%;
+
+  color: $main-green-color;
+  @include smallFontSize;
+  font-weight: 700;
+  background-color: $main-white-color;
+  text-transform: uppercase;
+  border-radius: 3px;
+  border: none;
+
+  &:hover {
+    color: $main-white-color;
+    background-color: rgba(255, 255, 255, 0.25);
+  }
+  &:hover .card__hover-exit {
+    transform: rotate(45deg);
+  }
+}
+
+//hover card slyles end
+
+.card__logo {
+  display: block;
+  margin-top: 24px;
+  margin-left: auto;
+  margin-bottom: 30px;
+}
+
+.card__category {
+  @include resetMarginPadding;
+
+  margin-bottom: 10px;
+
+  color: $main-green-color;
+  font-family: "Helvetica";
+  font-size: 13px;
+  line-height: 20px;
+
+  text-transform: uppercase;
+}
+
+.card__title {
+  @include resetMarginPadding;
+
+  margin-bottom: 72px;
+  font-family: "Helvetica";
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $main-black-color;
+}
+
+.card__type-wrapper,
+.card__period-wrapper {
+  display: flex;
+}
+
+.card__type-wrapper {
+  margin-bottom: 8px;
+}
+
+.card__period-wrapper {
+  margin-bottom: 30px;
+}
+
+.card__type-icon {
+  width: 18px;
+  height: 15px;
+
+  background-image: url("../img/postgraduate.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.card__type {
+  @include resetMarginPadding;
+
+  margin-left: 14px;
+
+  @include smallFontSize;
+  color: $main-black-color;
+}
+
+.card__period-icon {
+  width: 15px;
+  height: 15px;
+
+  background-image: url("../img/period.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.card__period {
+  @include resetMarginPadding;
+
+  margin-left: 17px;
+
+  @include smallFontSize;
+  color: $main-black-color;
+}
+
+.card__button {
+  @include resetMarginPadding;
+
+  margin-bottom: 30px;
+  padding-top: 15px;
+  padding-bottom: 12px;
+
+  width: 100%;
+  color: #ffffff;
+  @include smallFontSize;
+  font-weight: 700;
+  background-color: $main-green-color;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 3px;
+  border: none;
+}
+
+.cards__more-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.more-button__text {
+  color: $main-black-color;
+  @include smallFontSize;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.more-button__button {
+  @include resetMarginPadding;
+
+  margin-left: 12px;
+
+  width: 16px;
+  height: 16px;
+
+  background-image: url("../img/reset.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+}
+
+@media screen and (max-width: 650px) {
+  .main {
+    padding-top: 15px;
+    background-color: #ffffff;
+  }
+
+  .page-title {
+    margin-left: 22px;
+    margin-bottom: 16px;
+  }
+
+  .main-part-wrapper {
+    flex-direction: column;
+  }
+
+  .careers {
+    padding-top: 0;
+    width: 100%;
+  }
+
+  .careers__title-wrapper {
+    margin-bottom: 20px;
+    padding-top: 16px;
+    padding-bottom: 14px;
+    padding-left: 27px;
+    padding-right: 27px;
+    background-color: #f1f1f1;
+  }
+
+  .careers__title {
+    display: none;
+  }
+
+  .careers__title--mobile {
+    display: block;
+
+    margin-left: 13px;
+    color: $main-black-color;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+  }
+
+  .careers__button-wrapper {
+    display: none;
+  }
+
+  .accordion {
+    display: none;
+  }
+
+  .cards {
+    width: 100%;
+  }
+
+  .card {
+    width: 95%;
+  }
+}
